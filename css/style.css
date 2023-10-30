@@ -1,6 +1,5 @@
 body{
     font-family: "Poppins";
-    margin: 0;
 }
 
 .container{
@@ -9,22 +8,23 @@ body{
 }
 .header__content{
     display: flex;
-    justify-content: center;
     justify-content: space-between;
-    padding: 35px 0;
+    padding: 35px 0 0;
 }
 .header__content-logo{
     color: var(--primary-default, #5F2EEA);
-font-size: 34px;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 34.375px;
 font-weight: 700;
-line-height: 55px; 
+line-height: 55px;
 text-decoration: none;
 }
-@media screen and (max-width:337px) {
+
+@media screen and (max-width: 377px) {
     .header__content{
         display: flex;
         justify-content: center;
-
+        gap: 20px;
     }
     
 }
